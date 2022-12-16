@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "core-js": "^2.5.0",
+    "rxjs-compat": "^6.6.7"
+  }
+}

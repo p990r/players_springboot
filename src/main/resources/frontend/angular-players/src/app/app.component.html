@@ -1,0 +1,35 @@
+<ul>
+  <li>
+    <div class="background-one">
+      <div class="link-container">
+        <a routerLink="players" routerLinkActive="active" class="link-one">Player List</a>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div class="background-two">
+      <div class="link-container">
+        <a routerLink="create-player" routerLinkActive="active" class="link-two">Add Player</a>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div class="background-three">
+      <div class="link-container">
+        <a routerLink="" routerLinkActive="active" class="link-three">Place holder</a>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<h1 class="text-center"> {{title}} </h1>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<footer class="footer">
+  <div class="container">
+    <span>Made by Peri</span>
+  </div>
+</footer>

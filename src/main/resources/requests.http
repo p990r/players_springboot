@@ -1,0 +1,35 @@
+### Get all players
+GET http://localhost:8080/api/players
+Accept: application/json
+
+### Get player by id
+GET http://localhost:8080/api/players/2
+Accept: application/json
+
+### Create a new player
+POST http://localhost:8080/api/players
+Content-Type: application/json
+
+{
+  "name": "Player111"
+}
+
+### Update a player
+PUT http://localhost:8080/api/players/4
+Content-Type: application/json
+
+{
+  "name": "player101"
+}
+
+### Delete a player
+DELETE http://localhost:8080/api/players/4
+Content-Type: application/json
+
+### Get passers with higher pass than argument
+GET http://localhost:8080/api/players/passers/90
+Accept: application/json
+
+### Get passers with higher pass than argument
+GET https://restcountries.com/v2/all
+Accept: application/json
