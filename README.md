@@ -51,5 +51,5 @@ See player details and stats.
 Add new player<br>
 <br>![](screenshots/add1.png)
 
-Don't you dare leaving name field blank or using a name that exists on the database<br>
+Don't you dare leaving name field blank or using a name that exists in the database<br>
 <br>![](screenshots/add2.png)
