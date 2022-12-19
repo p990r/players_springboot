@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Player } from '../player';
-import { PlayerService } from '../player.service';
-import { Router } from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {Player} from '../player';
+import {PlayerService} from '../player.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-create-player',
@@ -13,27 +13,31 @@ export class CreatePlayerComponent implements OnInit {
   errorMsg = "";
 
   player: Player = new Player();
+
   constructor(private playerService: PlayerService,
-              private router: Router) { }
+              private router: Router) {
+  }
 
   ngOnInit(): void {
   }
 
-  savePlayer(){
-    this.playerService.createPlayer(this.player).subscribe( data =>{
+  savePlayer() {
+    this.playerService.createPlayer(this.player).subscribe(data => {
         console.log(data);
         this.goToPlayerList();
       },
-      error => console.log(error));
-    this.hasErrors = true;
-    this.errorMsg = "NOOOOOOOOO different name!";
+      error => {
+        console.log(error);
+        this.hasErrors = true;
+        this.errorMsg = "NOOOOOOOOO different name!";
+      })
   }
 
-  goToPlayerList(){
+  goToPlayerList() {
     this.router.navigate(['/players']);
   }
 
-  onSubmit(){
+  onSubmit() {
     console.log(this.player);
     this.savePlayer();
   }
