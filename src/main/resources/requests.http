@@ -30,6 +30,6 @@ Content-Type: application/json
 GET http://localhost:8080/api/players/passers/90
 Accept: application/json
 
-### Get passers with higher pass than argument
+### Get nationalities API
 GET https://restcountries.com/v2/all
 Accept: application/json
